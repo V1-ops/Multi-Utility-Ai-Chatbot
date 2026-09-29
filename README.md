@@ -213,15 +213,3 @@ This project works well for a lightweight chatbot demo, but a few things are sti
 - Search is basic and does not have a custom ranking layer
 - There is no authentication or multi-user isolation
 
-## Why the design feels simple
-
-The codebase is intentionally straightforward.
-
-Instead of hiding the workflow behind lots of abstraction, it keeps the moving parts easy to follow:
-
-- Streamlit handles the UI
-- LangGraph handles the conversation loop
-- Tools are plain Python functions
-- RAG is a focused per-thread feature, not a huge subsystem
-
-That makes the project a good starting point if you want to learn how chat, tool calling, streaming, persistence, and document retrieval fit together in a real app.
